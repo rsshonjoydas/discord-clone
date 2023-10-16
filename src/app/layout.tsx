@@ -1,8 +1,12 @@
-import { ThemeProvider } from '@/components/providers/theme-provider';
-import { cn } from '@/lib/utils';
 import { ClerkProvider } from '@clerk/nextjs';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+
+import { ModalProvider } from '@/components/providers/modal-provider';
+import { ThemeProvider } from '@/components/providers/theme-provider';
+
+import { cn } from '@/lib/utils';
+
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -23,6 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             enableSystem={false}
             storageKey='discord-theme'
           >
+            <ModalProvider />
             {children}
           </ThemeProvider>
         </body>
