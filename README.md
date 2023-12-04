@@ -4,21 +4,25 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <p align="center">
-  <h3 align="center">Discord Clone</h3>
-  <div align="center"><h3>Project Link: <a href="https://github.com/rsshonjoydas/discord-clone">GitHub</a> or <a href="https://codesandbox.io/s/github/rsshonjoydas/discord-clone/tree/main">CodeSandbox</a></h3></div>
+  <h1 align="center">Discord Clone</h1>
+  <div align="center"><h3>Project Link: <a href="https://github.com/rsshonjoydas/discord-clone">GitHub</a></h3></div>
 </p>
+
+### Fullstack Discord Clone: Next.js 13, React, Socket.io, Prisma, Tailwind, MongoDB
+
+![AI](docs/images/banner.png)
 
 <!-- TABLE OF CONTENTS -->
 
 ## Table of Contents
 
-- [Features](#features)
+- [Key Features](#key-features)
 - [Prerequisites](#prerequisites)
 - [Start the app](#start-the-app)
 - [How to setup the initial project](#how-to-setup-the-initial-project)
 - [Contact](#contact)
 
-This is a repository for Fullstack Discord Clone: Next.js 13, React, Socket.io, Prisma, Tailwind, MongoDB project
+This is a repository for Fullstack Discord Clone: Next.js 13, React, Socket.io, Prisma, Tailwind, MongoDB
 
 ### Features:
 
@@ -33,12 +37,14 @@ This is a repository for Fullstack Discord Clone: Next.js 13, React, Socket.io, 
 - Infinite loading for messages in batches of 10 (tanstack/query)
 - Server creation and customization
 - Beautiful UI using TailwindCSS and ShadcnUI
-- Full responsivity and mobile UI
+- Full responsive and mobile UI
 - Light / Dark mode
 - Websocket fallback: Polling with alerts
 - ORM using Prisma
-- MongoDB Database
+- MySQL database using Planetscale
 - Authentication with Clerk
+
+<!-- HOW TO RUN -->
 
 ### Prerequisites
 
@@ -102,13 +108,7 @@ Certainly, if you're working on a Node.js project and you have a development scr
 
      Your `Prisma` database is accessible locally at the following address: [http://localhost:5555](http://localhost:5555)
 
-5. **Seed the Database**:
-
-   ```bash
-   node ./scripts/seed.ts
-   ```
-
-6. **Run Your Application in Development Mode**:
+5. **Run Your Application in Development Mode**:
 
    ```bash
    yarn dev
